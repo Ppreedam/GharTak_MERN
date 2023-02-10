@@ -1,0 +1,223 @@
+
+
+.homepagemainbox{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+.carouselimg{
+    height: 400px;
+    width: 700px;
+    /* border: 1px solid red; */
+}
+.fourimgcarousel{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.fourimgcarouselsize{
+    height: 195px;
+    width: 225px;
+}
+
+@media (max-width:1450px) {
+    .homepagemainbox{
+        display: flex;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 300px;
+        width: 500px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .fourimgcarouselsize{
+        height: 130px;
+        width: 200px;
+        /* border: 10px solid greenyellow; */
+    }
+}
+
+@media (max-width:1270px) {
+    .homepagemainbox{
+        display: flex;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 200px;
+        width: 400px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .fourimgcarouselsize{
+        height: 85px;
+        width: 120px;
+        /* border: 10px solid greenyellow; */
+    }
+}
+
+@media (max-width:932px) {
+    .homepagemainbox{
+        display: flex;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 150px;
+        width: 300px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-top: 30px;
+    }
+    .fourimgcarouselsize{
+        height: 60px;
+        width: 100px;
+        /* border: 10px solid greenyellow; */
+    }
+}
+
+@media (max-width:767px) {
+    .homepagemainbox{
+        display: inline-block;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 300px;
+        width: 450px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        margin-left: 22px;
+    }
+    .fourimgcarouselsize{
+        height: 145px;
+        width: 230px;
+        /* border: 10px solid greenyellow; */
+    }
+}
+
+
+@media (max-width:667px) {
+    .homepagemainbox{
+        display: inline-block;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 220px;
+        width: 400px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        margin-left: 22px;
+    }
+    .fourimgcarouselsize{
+        height: 125px;
+        width: 190px;
+        /* border: 10px solid greenyellow; */
+    }
+}
+
+@media (max-width:667px) {
+    .homepagemainbox{
+        display: inline-block;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 180px;
+        width: 300px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        margin-left: 22px;
+    }
+    .fourimgcarouselsize{
+        height: 90px;
+        width: 140px;
+        /* border: 10px solid greenyellow; */
+    }
+}
+
+@media (max-width:448px) {
+    .homepagemainbox{
+        display: inline-block;
+        margin-bottom: 30px;
+        /* border: 1px solid red; */
+    }
+
+    .carouselimg{
+        height: 150px;
+        width: 250px;
+        margin-left: 22px;
+        margin: 30px;
+    }
+    /* four image parent box display */
+    
+    .fourimgcarousel{
+        /* border: 10px solid yellow; */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5px;
+        margin-left: 22px;
+    }
+    .fourimgcarouselsize{
+        height: 60px;
+        width: 120px;
+        /* border: 10px solid greenyellow; */
+    }
+}

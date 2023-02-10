@@ -1,0 +1,9 @@
+.bodycontainer{
+  width: 80%;
+  margin: auto;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* height: 500px; */
+}
+body{
+  background-color: #eaeaea;
+}

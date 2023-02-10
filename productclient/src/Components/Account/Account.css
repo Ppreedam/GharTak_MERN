@@ -1,0 +1,19 @@
+
+@media (max-width:1050px) {
+    #account-menu{
+        /* border: 10px solid green; */
+        left: 79px;
+    }
+}
+@media (max-width:767px) {
+    #account-menu{
+        /* border: 10px solid green; */
+        left: 61px;
+    }
+}
+@media (max-width:500px) {
+    #account-menu{
+        /* border: 10px solid green; */
+        left: 35px;
+    }
+}

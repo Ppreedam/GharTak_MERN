@@ -1,0 +1,18 @@
+.adddlbox{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 40px  ;
+    position: relative;
+    /* margin-bottom: 80px; */
+    
+    height: 550px;
+}
+.spinnerbox{
+    position: absolute;
+    /* border: 1px solid red; */
+    bottom: 80px;
+    margin-left: 280px;
+}
+.spinnerbox>img{
+    height: 100px;
+    width: 100px;
+}

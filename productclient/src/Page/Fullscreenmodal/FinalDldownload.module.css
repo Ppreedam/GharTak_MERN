@@ -1,0 +1,358 @@
+.parentbox{
+    /* border: 1px solid red; */
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+    width: 79.9%;
+    margin: auto;
+    /* margin-top: 70px; */
+    height: 680px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mainbox {
+    /* border: 1px solid red; */
+    /* display: flex;
+    gap: 10px; */
+    /* width: 80%;
+    margin: auto; */
+    /* margin-top: 90px; */
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    height: 204.48px;
+    width: 324.48px;
+    color: white;
+    border: 1px dashed black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 1px; */
+    margin-top: 20px;
+}
+
+.topleft {
+    position: absolute;
+    top: 20px;
+    font-size: 10px;
+    left: 51px;
+    color: black;
+}
+
+
+
+.bottomright {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+
+
+/* Back Page */
+
+
+
+.imgsize {
+    height: 204.48px;
+    width: 324.48px;
+}
+
+.statelogo {
+    position: absolute;
+    top: 11.5px;
+    right: 16px;
+    color: black;
+    font-size: 9px;
+}
+
+.dlnum {
+    position: absolute;
+    top: 39px;
+    font-size: 12px;
+    left: 60px;
+    color: black;
+}
+
+.issuedate {
+    position: absolute;
+    top: 75px;
+    font-size: 9px;
+    left: 86px;
+    color: black;
+}
+
+.validitint {
+    position: absolute;
+    top: 75px;
+    font-size: 9px;
+    left: 140px;
+    color: black;
+}
+
+.validititr {
+    position: absolute;
+    top: 75px;
+    font-size: 9px;
+    left: 195px;
+    color: black;
+}
+
+.profileimg {
+    position: absolute;
+    top: 40px;
+    right: 25px;
+    color: black;
+    font-size: 9px;
+}
+
+.profilephoto {
+    height: 50px;
+    width: 50px;
+    /* border: 1px solid red; */
+}
+
+.profilesignbox {
+    position: absolute;
+    top: 95px;
+    right: 25px;
+    color: black;
+    font-size: 9px
+}
+
+.profilesign {
+    height: 20px;
+    width: 50px;
+}
+
+.name {
+    color: black;
+    position: absolute;
+    font-size: 9px;
+    bottom: 75.5px;
+    left: 36px;
+    
+}
+
+.birth {
+    color: black;
+    position: absolute;
+    font-size: 9px;
+    bottom: 60px;
+    left: 67px;
+}
+
+.swd {
+    color: black;
+    position: absolute;
+    font-size: 9px;
+    bottom: 46px;
+    left: 67px;
+}
+
+.address {
+    color: black;
+    position: absolute;
+    font-size: 9px;
+    bottom: 19px;
+    left: 66px;
+    text-align: left;
+}
+
+.bg {
+    position: absolute;
+    top: 67.5%;
+    left: 65%;
+    font-size: 9px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.organdonar {
+    position: absolute;
+    top: 67.5%;
+    left: 92.5%;
+    font-size: 9px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+.verticaltext {
+    writing-mode: vertical-lr;
+    transform: scale(-1, -1);
+    /* border: 1px solid red; */
+    height: 190px;
+    position: absolute;
+    top: 7%;
+    left: 94%;
+    font-size: 7px;
+
+    color: black;
+}
+
+
+/* back page */
+.dlnumbackpage{
+    position: absolute;
+    top: 10px;
+    font-size: 12px;
+    left: 10px;
+    color: black;
+}
+
+.selectprofilephoto{
+    position: relative;
+    top: 150px;
+    font-family: calibri;
+    width: 150px;
+    padding: 10px;
+    /* -webkit-border-radius: 5px;
+    -moz-border-radius: 5px; */
+    border: 1px dashed #BBB;
+    text-align: center;
+    background-color: #DDD;
+    cursor: pointer;
+}
+
+.mcwg {
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 79px;
+    left: 43px;
+    
+}
+.mcwgissuedby{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 79px;
+    left: 83px;
+    
+}
+.mcwgissue_date_back{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 79px;
+    left: 123px;
+}
+.mcwg_cat{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 79px;
+    left: 171px;
+}
+.lmv {
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 67px;
+    left: 43px;
+    
+}
+.lmvissuedby{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 67px;
+    left: 83px;
+    /* border: 1px solid red; */
+}
+.lmvissue_date_back{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 67px;
+    left: 123px;
+}
+.lmv_cat{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 67px;
+    left: 171px;
+}
+.transport {
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 53px;
+    left: 43px;
+    
+}
+.trissuedby{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 53px;
+    left: 83px;
+    /* border: 1px solid red; */
+}
+.trissue_date_back{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 53px;
+    left: 123px;
+}
+.tr_cat{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 53px;
+    left: 171px;
+}
+
+.qr {
+    color: black;
+    position: absolute;
+    font-size: 9px;
+    bottom: 119.5px;
+    left: 16px;
+    
+}
+.dto{
+    color: black;
+    position: absolute;
+    font-size: 7px;
+    bottom: 0.4px;
+    left: 263px;
+}
+
+.price{
+    margin-top: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5px;
+    height: 50px;
+    text-align: center;
+}
+
+/* Divide body into two partss */
+
+
+.secondbodybox{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    width: 400px;
+}
+.textfield{
+    width: 100%;
+    /* margin-bottom: 20px; */
+    /* margin-top: 20px; */
+}
+.validdatebox{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border:  1px solid red; */
+    /* height: 150px; */
+    border-radius: 10px;
+}
+
+.downloadbox{
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 100px; */
+    margin-top: 25rem;
+}
+.downloadbtn{
+    margin-top: 30px;
+}

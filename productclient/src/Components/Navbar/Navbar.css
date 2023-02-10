@@ -1,0 +1,91 @@
+.navbar {
+    border-top: 5px solid #c46101;
+    /* height: 70px; */
+    /* position: fixed;
+    margin-top: 0px; */
+}
+
+.homeicon {
+    background-color: #c46101;
+    height: 40px;
+    width: 40px;
+}
+
+.fa-house-chimney {
+    margin-left: 10px;
+}
+
+.textcolorfont {
+    font-family: Arial, sans-serif;
+    /* border: 1px solid red; */
+    color: white;
+    margin-top: 11px;
+    font-size: 15px;
+    margin-left: 10px;
+
+}
+
+.textcolorfont:hover {
+    font-family: Arial, sans-serif;
+    /* border: 1px solid red; */
+    color: white;
+    margin-top: 11px;
+    font-size: 16px;
+    margin-left: 10px;
+
+
+}
+
+.hovereffect:hover {
+    background-color: #c46101;
+    height: 90%;
+    border-radius: 5px;
+}
+
+.textdecoration {
+    text-decoration: none;
+    color: white;
+
+}
+
+.textdecoration:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.dropdouwn {
+    font-family: Arial, sans-serif;
+    /* border: 1px solid red; */
+    color: white;
+    margin-top: 2px;
+    font-size: 15px;
+
+    margin-left: 10px;
+}
+
+@media (max-width:982px) {
+    .homeicon {
+        background-color: #c46101;
+        height: 90%;
+        border-radius: 5px;
+        /* margin-left: -130px; */
+        /* border: 1px solid red; */
+    }
+}
+
+@media (max-width:767px) {
+    .fa-magnifying-glass{
+        /* border: 1px solid red; */
+        display: none;
+    }
+    
+}
+
+
+@media (max-width:500px) {
+    .fa-magnifying-glass{
+        /* border: 1px solid red; */
+        display: none;
+    }
+    
+}

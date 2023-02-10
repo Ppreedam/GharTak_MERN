@@ -1,0 +1,10 @@
+.myaccountbox{
+    /* border: 1px solid red; */
+    
+    width: 80%;
+    margin: auto;
+    margin-top: 90px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    height: 500px;
+}
