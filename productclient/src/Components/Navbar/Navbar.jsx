@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from "react-router-dom"
 import AccountMenu from '../Account/Account';
+import Cartpage from '../Cartpage/Cartpage';
 import Wallet from '../Wallet/Wallet';
 import "./Navbar.css"
 
@@ -14,13 +15,13 @@ function CollapsibleExample() {
             <div className=''>
 
 
-                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='Navbar' fixed='top' style={{width:"80%",margin:"auto"}}>
+                <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='Navbar' fixed='top' style={{width:"100%", marginBottom:"40px"}}>
                     <Container>
                         <Navbar.Brand href="/" className='homeicon'><i class="fa-solid fa-house-chimney"></i></Navbar.Brand>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse >
                             <Nav className="me-auto">
-                                <div className='hovereffect'><Link className='textdecoration'><p className='textcolorfont'>MEN</p></Link></div>
+                                <div className='hovereffect'><Link to={"/product"} className='textdecoration'><p className='textcolorfont'>ALLPRODUCT</p></Link></div>
                                 <div className='hovereffect'><Link className='textdecoration'><p className='textcolorfont'>WOMEN</p></Link></div>
                                 <div className='hovereffect'><Link className='textdecoration'><p className='textcolorfont'>MOBILE</p></Link></div>
                                 <div className='hovereffect'><Link className='textdecoration'><p className='textcolorfont'>FASHION</p></Link></div>
@@ -36,7 +37,8 @@ function CollapsibleExample() {
 
                             </Nav>
                             <Nav>
-                                <Wallet/>
+                                {/* <Wallet/> */}
+                                <Cartpage/>
                                 <AccountMenu />
                                 <Nav.Link eventKey={2} href="#memes" className='hignore' style={{color:"#212529"}}>
                                     h

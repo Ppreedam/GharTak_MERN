@@ -6,8 +6,8 @@
     margin-bottom: 30px;
 }
 .carouselimg{
-    height: 400px;
-    width: 700px;
+    height: 450px;
+    width: 850px;
     /* border: 1px solid red; */
 }
 .fourimgcarousel{
@@ -17,8 +17,8 @@
     gap: 5px;
 }
 .fourimgcarouselsize{
-    height: 195px;
-    width: 225px;
+    height: 215px;
+    width: 285px;
 }
 
 @media (max-width:1450px) {

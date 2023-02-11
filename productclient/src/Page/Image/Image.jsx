@@ -37,3 +37,16 @@
     // res.send('Successfully uploaded files!');
     
 //   });
+
+// import React from 'react'
+// import "./image.css"
+
+// const Image = () => {
+//   return (
+//     <div className='card'>hello
+
+//     </div>
+//   )
+// }
+
+// export default Image

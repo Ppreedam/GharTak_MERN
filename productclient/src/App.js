@@ -7,6 +7,7 @@ import AdminHome from './Admin/Pages/Home/AdminHome';
 import CheckoutPage from './Page/CheckoutPdf';
 import { AddWalletpage } from './Admin/Pages/AddWalletpage/Addwallet';
 import Footer from './Components/Footer/Footer';
+import Image from './Page/Image/Image';
 
 
 
@@ -21,8 +22,9 @@ function App() {
          <Footer/>
         </div>
       
-       {/* <AddWalletpage/> */}
+       
       </div>
+      
     </>
   );
 }

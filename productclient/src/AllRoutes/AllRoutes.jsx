@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import { Routes, Route, useNavigate } from "react-router-dom"
-import AddDlDetails from '../Page/DlPrint/AddDlDetails'
-import PrintDl from '../Page/DlPrint/PrintDl'
 import Home from '../Page/Home/Home'
 import Login from '../Page/Login/Login'
 import Register from '../Page/Register/Regidter'
@@ -11,9 +9,11 @@ import { LoginContext } from '../ContextProvider/Context'
 import CreateBlog from '../Admin/Pages/CreateBlog/CreateBlog'
 import AdminHome from '../Admin/Pages/Home/AdminHome'
 import MyAccount from '../Components/MyAccount/MyAccount'
-import FinalDldownload from '../Page/DlPrint/FinalDldownload'
-import SinglePage from '../Page/SinglePage/SinglePage'
+
+
 import Adminlogin from '../Admin/Pages/AdminLogin/Adminlogin'
+import Product from '../Page/Product/Product'
+import SinglePage from '../Page/Singlepages/Singlepage'
 
 const AllRoutes = () => {
   // const [data, setData] = useState(false);
@@ -27,9 +27,9 @@ const AllRoutes = () => {
 
   const AdminValidUser = async () => {
     let token = localStorage.getItem("adminusersdatatoken");
-    console.log("admin",token)
+    // console.log("admin",token)
 
-    const res = await fetch("http://localhost:5000/adminvaliduser", {
+    const res = await fetch("https://ghartak.onrender.com/adminvaliduser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -48,10 +48,12 @@ const AllRoutes = () => {
 
   }
 
+
   const ValidUser = async () => {
     let token = localStorage.getItem("usersdatatoken");
+    
 
-    const res = await fetch("http://localhost:5000/validuser", {
+    const res = await fetch("https://ghartak.onrender.com/ValidUser", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -64,11 +66,12 @@ const AllRoutes = () => {
       // console.log("user not valid");
     } else {
       // console.log("user verify");
-      setLoginData(data)
+      setLoginData (data)
       // history("/dash");
     }
 
   }
+  
 
   useEffect(() => {
     // setTimeout(() => { 
@@ -77,21 +80,21 @@ const AllRoutes = () => {
     // }, 2000)
 
   }, [])
-  // console.log("logindata",logindata)
+  console.log("logindata",logindata)
   return (
     <>
       <div>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path="/adddldetails"
-            element={logindata ? <AddDlDetails /> : <Login />} />
-          <Route path="/printdl" element={logindata ? <PrintDl/> : <Login />} />
+          <Route path="/product"
+            element={logindata ? <Product/> : <Login />} />
+          {/* <Route path="/productDetails/:id" element={logindata ? <SinglePage/> : <Login />} /> */}
           <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/myaccount' element={logindata ? <MyAccount /> : <Login />} />
           <Route path='*' element={<Error />} />
           {/* <Route path='/finaldldownload' element={<FinalDldownload />} /> */}
-          <Route path='/singleblogpage/:id' element={<SinglePage />} />
+          <Route path="/productDetails/:id" element={<SinglePage/> } />
 
           <Route path='/adminlogin' element={<Adminlogin />} />
           <Route path='/admindashboard' element={admin ? <AdminHome /> : <Adminlogin />} />

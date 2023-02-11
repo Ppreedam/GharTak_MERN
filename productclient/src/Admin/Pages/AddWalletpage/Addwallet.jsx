@@ -23,7 +23,7 @@ export function AddWalletpage() {
 
     const Addmoney = () => {
         // console.log("hellomoney", data)
-        axios.post("https://sarkari-card.onrender.com/addfund",data)
+        axios.post("https://ghartak.onrender.com/addfund",data)
         .then((res)=>alert(res.data.message))
         .catch((err)=>{
             if(err.message=='Request failed with status code 400'){

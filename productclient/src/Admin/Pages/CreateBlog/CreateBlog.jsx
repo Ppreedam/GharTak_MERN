@@ -42,7 +42,7 @@ export default function CreateBlog() {
   }
 
   const handlepost = () => {
-    axios.post("http://localhost:5000/addblog", data)
+    axios.post("https://ghartak.onrender.com/addblog", data)
       .then((res) => {
         alert(res.data.mess)
         // console.log(res.data.mess)

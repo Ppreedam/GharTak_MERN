@@ -53,7 +53,7 @@ const Adminlogin = () => {
             // console.log("user login succesfully done");
 
 
-            const data = await fetch("http://localhost:5000/adminlogin",{
+            const data = await fetch("https://ghartak.onrender.com/adminlogin",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -64,12 +64,12 @@ const Adminlogin = () => {
             });
 
             const res = await data.json();
-             console.log(res);
+            //  console.log(res);
 
             if(res.status === 201){
                 localStorage.setItem("adminusersdatatoken",res.result.token);
                 setTimeout(()=>{
-                    window.location.reload()
+                    // window.location.reload()
                     navigate("/adminhome")
                  },2000)
                 
