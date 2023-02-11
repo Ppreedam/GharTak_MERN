@@ -10,7 +10,7 @@ const MyAccount = () => {
 
     const getwalletfund = (email)=>{
         // console.log(email)
-        axios.get(`http://localhost:5000/getfund/${email}`)
+        axios.get(`https://ghartak.onrender.com/getfund/${email}`)
             .then((res) => setBalence(res.data.wallet.balance))
             .catch((err) => (err));
     }
@@ -18,7 +18,7 @@ const MyAccount = () => {
     const ValidUser = async () => {
         let token = localStorage.getItem("usersdatatoken");
 
-        const res = await fetch("http://localhost:5000/validuser", {
+        const res = await fetch("https://ghartak.onrender.com/validuser", {
             method: "GET",
             headers: {
                 "Content-Type": "application/json",

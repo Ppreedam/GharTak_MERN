@@ -53,7 +53,7 @@ const Login = () => {
             // console.log("user login succesfully done");
 
 
-            const data = await fetch("http://localhost:5000/login",{
+            const data = await fetch("https://ghartak.onrender.com/login",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json"
@@ -68,15 +68,15 @@ const Login = () => {
 
             if(res.status === 201){
                 localStorage.setItem("usersdatatoken",res.result.token);
-                setTimeout(()=>{
-                    window.location.reload()
-                    navigate("/adddldetails")
-                 },2000)
+                // setTimeout(()=>{
+                //     window.location.reload()
+                //     navigate("/adddldetails")
+                //  },2000)
                 
                 
                 setInpval({...inpval,email:"",password:""});
                 toast.success("Login Successfully done 😃!", {
-                    position: "top-center"
+                    position: "bottom-center"
                 });
             }
         }
@@ -114,6 +114,7 @@ const Login = () => {
 
                         <button className={styles.btn} onClick={loginuser}>Login</button>
                         <p>Don't have an Account? <NavLink to="/register">Sign Up</NavLink> </p>
+                        <p>Admin Login <NavLink to="/admindashboard">Admin Login</NavLink> </p>
                     </form>
                     <ToastContainer />
                 </div>

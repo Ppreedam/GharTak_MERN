@@ -3,7 +3,7 @@ import styles from "./Home.module.css"
 import CarouselEffect from '../../Components/Carousel/Carousel'
 import HomeCard from '../../Components/HomeCard/HomeCard'
 import Footer from '../../Components/Footer/Footer'
-import RecipeReviewCard from '../../Components/BlogCard/BlogCard'
+// import RecipeReviewCard from '../../Components/BlogCard/BlogCard'
 
 
 const Home = () => {
@@ -11,7 +11,7 @@ const Home = () => {
     <div className={styles.homecenterpage}>
         <CarouselEffect/>
         {/* <HomeCard/> */}
-        <RecipeReviewCard/>
+        {/* <RecipeReviewCard/> */}
         {/* <Footer/> */}
     </div>
   )
