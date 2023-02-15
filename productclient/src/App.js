@@ -4,10 +4,11 @@ import './App.css';
 import CollapsibleExample from './Components/Navbar/Navbar';
 // import Home from './Admin/Pages/Home';
 import AdminHome from './Admin/Pages/Home/AdminHome';
-import CheckoutPage from './Page/CheckoutPdf';
 import { AddWalletpage } from './Admin/Pages/AddWalletpage/Addwallet';
 import Footer from './Components/Footer/Footer';
 import Image from './Page/Image/Image';
+import Checkout from './Page/CheckoutPage/Checkout';
+import PaginationData from './Components/Pagination/Pagination';
 
 
 
@@ -21,7 +22,7 @@ function App() {
          <AllRoutes/>
          <Footer/>
         </div>
-      
+      {/* <PaginationData/> */}
        
       </div>
       

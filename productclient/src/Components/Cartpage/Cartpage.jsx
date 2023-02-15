@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Table } from '@mui/material';
 import Divider from '@mui/material/Divider';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 // import { deletitemaction } from '../Redux/Appreducer/action';
 import { useEffect } from 'react';
 import { deletitemaction } from '../../Redux/Appreducer/action';
@@ -17,6 +17,7 @@ const Cartpage = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const dispatch = useDispatch();
   const [price, setPrice] = useState(0);
+  const navigate = useNavigate();
 
   const product = useSelector((state) => state.Appreducer?.cart);
   // console.log(product)
@@ -47,6 +48,12 @@ const Cartpage = () => {
     setAnchorEl(null);
   };
 
+  const checkout = ()=>{
+    // console.log("first")
+    
+    navigate("/checkout")
+    
+  }
 
   return (
     <div>
@@ -120,7 +127,7 @@ const Cartpage = () => {
                   <p className='text-center'>Total :₹ {price}</p>
 
 
-                  <Link to="/information"><button className='checkout'>Checkout</button></Link>
+                  <button className='checkout' onClick={checkout}>Checkout</button>
 
                 </tbody>
               </Table>
