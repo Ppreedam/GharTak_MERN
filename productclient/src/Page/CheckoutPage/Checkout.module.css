@@ -1,0 +1,43 @@
+.blogparentbox{
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    margin-top: 90px;
+}
+.secondbox{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    
+}
+.secondbox>div:nth-child(1){
+    /* border: 1px solid red; */
+    width: 55%;
+    /* margin: non; */
+    
+}
+.secondbox>div:nth-child(2){
+    /* border: 1px solid red; */
+    width: 40%;
+    /* margin: non; */
+    
+}
+
+.textfield{
+    /* border: 1px solid red; */
+    width: 98%;  
+   
+}
+.buttondiv{
+    display: flex;
+}
+
+.buttondiv>button{
+    padding: 8px 20px ;
+    border-radius: 5px;
+    border: none;
+    background-color: #c46101;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5px;
+}

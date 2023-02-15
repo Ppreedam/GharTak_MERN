@@ -14,6 +14,7 @@ import MyAccount from '../Components/MyAccount/MyAccount'
 import Adminlogin from '../Admin/Pages/AdminLogin/Adminlogin'
 import Product from '../Page/Product/Product'
 import SinglePage from '../Page/Singlepages/Singlepage'
+import Checkout from '../Page/CheckoutPage/Checkout'
 
 const AllRoutes = () => {
   // const [data, setData] = useState(false);
@@ -95,6 +96,7 @@ const AllRoutes = () => {
           <Route path='*' element={<Error />} />
           {/* <Route path='/finaldldownload' element={<FinalDldownload />} /> */}
           <Route path="/productDetails/:id" element={<SinglePage/> } />
+          <Route path='/checkout' element={<Checkout/>}/>
 
           <Route path='/adminlogin' element={<Adminlogin />} />
           <Route path='/admindashboard' element={admin ? <AdminHome /> : <Adminlogin />} />
